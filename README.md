@@ -1,6 +1,13 @@
 ## Heat 프로그램 (운영체제의 실제 과제)
 에러상황에서 처리가 미숙하기 때문에 옵션들이 앞의 가이드라인에 따르지 않으면 오류를 범할 수 있다. 
 
+0. 설치 (Docker 필요)
+아래의 명령어들을 실행
+> docker compose up -d --build
+> docker exec -it work /bin/bash
+> make clean
+> make
+
 1. 기본 명령어 실행
 ./heat -i “인터벌 주기(초)”  “curl -sf 테스트 서버 GET 요청"
 
