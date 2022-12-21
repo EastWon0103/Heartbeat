@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  work:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    container_name: work
+    command: sleep infinity
+    volumes:
+      - .:/build
+    working_dir: /build
+
