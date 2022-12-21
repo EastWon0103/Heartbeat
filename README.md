@@ -3,10 +3,12 @@
 
 0. 설치 (Docker 필요)
 아래의 명령어들을 실행
-> docker compose up -d --build
-> docker exec -it work /bin/bash
-> make clean
-> make
+```
+docker compose up -d --build
+docker exec -it work /bin/bash
+make clean
+make
+```
 
 1. 기본 명령어 실행
 ./heat -i “인터벌 주기(초)”  “curl -sf 테스트 서버 GET 요청"
